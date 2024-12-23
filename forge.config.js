@@ -4,14 +4,14 @@ const { FuseV1Options, FuseVersion } = require('@electron/fuses');
 module.exports = {
   packagerConfig: {
     asar: true,
-    icon: "C:/Users/Kira/Desktop/BomesDesktopApp/media/icon_round.ico"
+    icon: "./src/media/icon_round.ico"
   },
   rebuildConfig: {},
   makers: [
     {
       name: '@electron-forge/maker-squirrel',
       config: {
-        setupIcon: 'C:/Users/Kira/Desktop/BomesDesktopApp/media/icon_round.ico'
+        setupIcon: './src/media/icon_round.ico'
       },
     },
     {
